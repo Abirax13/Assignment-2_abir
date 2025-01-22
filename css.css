@@ -514,15 +514,22 @@ footer{
         position: relative;
     }
     #drop{
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
         display: flex;
         flex-direction: column;
-        gap: 4px;
-        cursor: pointer;
+        gap: 5px;
     }
     .dots{
         width: 25px;
         height: 5px;
         background-color: #525252;
+    }
+    .drop:focus + .dropdown,
+    .drop:hover + .dropdown {
+        display: block;
     }
     .dropdown{
         position: absolute;
@@ -541,7 +548,7 @@ footer{
     }
     .dropdown > a{
         text-decoration: none;
-        color: #333;
+        color: #486fda;
         padding: 5px 10px;
         display: block;
         border-radius: 4px;
