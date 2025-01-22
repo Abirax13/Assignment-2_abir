@@ -1,15 +1,17 @@
 body{
-    width: 80%;
+    width: 100%;
     justify-self: center;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px 0 10px 0;
-    background: linear-gradient( rgba(0, 119, 255, 0), rgba(255, 255, 255, 0), rgba(250, 205, 108, 0.808));
+    padding-top: 10px;
+    background: linear-gradient( rgba(0, 119, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(1, 172, 253, 1));
 }
 /* Header */
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 5% ;
+    padding-right: 5%;
 }
 header > div{
     display: flex;
@@ -78,7 +80,7 @@ nav > ul > li > a{
 /* marquee */
 marquee{
     color: rgba(156, 36, 236, 0.733);
-    padding: 20px 0 0 10px;
+    padding: 2% 0 0 2%;
 }
 /* main body */
 /* banner */
@@ -87,6 +89,8 @@ marquee{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 #bannerdiv{
     max-width: 50%;
@@ -129,6 +133,11 @@ marquee{
     width:100%;
 }
 /* Standard Curriculum */
+main{
+    background: linear-gradient( rgba(0, 119, 255, 0), rgba(255, 255, 255, 0), rgba(250, 205, 108, 0.808));
+    padding-left: 5%;
+    padding-right:5%;
+}
 #section1{
     background-image: url(image/bg.png);
 }
@@ -146,6 +155,8 @@ marquee{
     display: flex;
     justify-content:space-around;
     margin-bottom: 40px;
+    gap: 20px;
+    column-gap: 5%;
 }
 /* card 1 */
 #card1{
@@ -154,7 +165,8 @@ marquee{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 300px;
+    width: 100%;
+    max-height: 550px;
     justify-content: center;
 }
 #card1 img{
@@ -164,7 +176,7 @@ marquee{
 }
 #card1 h2{
     font-size: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 #card1 p{
     margin-top: 10px;
@@ -175,14 +187,14 @@ marquee{
     justify-content: center;
     font-weight: lighter;
     color: #555;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 #card1 button{
     color: skyblue;
     font-weight: bolder;
     background-color: white;
     border: none;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 #card1 button:hover{
     color: rgb(145, 154, 158);
@@ -194,7 +206,8 @@ marquee{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 300px;
+    width: 100%;
+    max-height: 550px;
     justify-content: center;
 }
 #card2 img{
@@ -204,7 +217,7 @@ marquee{
 }
 #card2 h2{
     font-size: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 #card2 p{
     margin-top: 10px;
@@ -215,14 +228,14 @@ marquee{
     justify-content: center;
     font-weight: lighter;
     color: #555;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 #card2 button{
     color: orange;
     font-weight: bolder;
     background-color: white;
     border: none;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 #card2 button:hover{
     color: rgb(243, 216, 167);
@@ -234,7 +247,8 @@ marquee{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 300px;
+    width: 100%;
+    max-height: 550px;
     justify-content: center;
 }
 #card3 img{
@@ -244,7 +258,7 @@ marquee{
 }
 #card3 h2{
     font-size: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 #card3 p{
     margin-top: 10px;
@@ -255,14 +269,14 @@ marquee{
     justify-content: center;
     font-weight: lighter;
     color: #555;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 #card3 button{
     color: rgb(144, 32, 219);
     font-weight: bolder;
     background-color: white;
     border: none;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 #card3 button:hover{
     color: rgb(189, 146, 218);
@@ -291,26 +305,30 @@ marquee{
 
 .storysec{
     display: flex;
-    justify-content:center;
-    gap: 30px;
-    margin: 10px auto;
+    justify-content:space-between;
+    column-gap: 50px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .our{
     background-image: url('image/bg.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    margin: 50px auto;
+    /* background-size: cover; */
+    /* margin: 50px auto; */
     justify-items: center;
 }
 .cont1{
-    max-width: 540px;
+    width: 100%;
     border: none;
     border-radius:15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: white;
     padding: 0px;
 }
 
 .cont1 > div > img{
+    width: 100%;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
@@ -327,6 +345,10 @@ marquee{
     padding: 15px 10px;
     background-color: skyblue;
     width: fit-content;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.bigc:hover{
+    background-color: orange;
 }
 .div{
     margin-top:-30px;
@@ -335,34 +357,46 @@ marquee{
 .big1{
     font-size: 1rem;
     font-weight: bold;
-    background-color: rgba(149, 178, 38, 1);
+    background-color: rgb(45, 133, 42);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: none;
     color: white;
     padding: 10px 15px;
     border-radius: 45px;
 }
+.big1:hover{
+    background-color: rgb(81, 149, 236);
+}
 .big2{
     font-size: 1rem;
     font-weight: bold;
-    background-color: rgba(93, 88, 240, 1);
+    background-color: rgb(45, 133, 42);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: none;
     color: white;
     padding: 10px 15px;
     border-radius: 45px;
+}
+.big2:hover{
+    background-color: rgb(81, 149, 236);
 }
 .hb{
     padding: 20px 65px 35px 38px;
 }
 .cont2{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
-    gap: 20px;
+    column-gap: 50px;
+    row-gap: 30px;
 }
 .vbutton{
     align-items: center;
     justify-content: center;
     border: none;
+    padding: 40px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .vb{
     font-size: 20px;
@@ -377,38 +411,50 @@ marquee{
     background-color: skyblue;
 }
 .carda{
-    max-width: 291px;
+    /* max-width: 291px; */
+    width: 100%;
     background-color: white;
     border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .carda>img{
+    width: 100%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 .cardb{
-    max-width: 291px;
+    /* max-width: 291px; */
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: white;
     border-radius: 16px;
 }
 .cardb>img{
+    width: 100%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 .cardc{
-    max-width: 291px;
+    /* max-width: 291px; */
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: white;
     border-radius: 16px;
 }
 .cardc>img{
+    width: 100%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 .cardd{
-    max-width: 291px;
+    /* max-width: 291px; */
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: white;
     border-radius: 16px;
 }
 .cardd>img{
+    width: 100%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
@@ -420,6 +466,9 @@ marquee{
 footer{
     background-color: rgba(1, 172, 253, 1);
     color: white;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
 }
 .footerc{
     display: flex;
@@ -459,6 +508,47 @@ footer{
     header{
         padding-bottom: 10px;
         border-bottom: .5px solid orange;
+    }
+    .menu{
+        display: contents;
+        position: relative;
+    }
+    #drop{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+    }
+    .dots{
+        width: 25px;
+        height: 5px;
+        background-color: #525252;
+    }
+    .dropdown{
+        position: absolute;
+        top: 30px;
+        right: 0;
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        display: none;
+    }
+    .dropdown li{
+        margin: 5px 0;
+    }
+    .dropdown > a{
+        text-decoration: none;
+        color: #333;
+        padding: 5px 10px;
+        display: block;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+    .dropdown > a:hover{
+        background-color: #c7c7c7;
     }
     body{
         width: 100%;
